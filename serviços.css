@@ -18,7 +18,7 @@
     text-align: center;
   }
   /*testo "nossos serviços"*/
-  .servicos h2 {
+   h2 {
     font-size: 2.5em;/*tamanho da fonte*/
     color: #d63384;
     margin-bottom: 10px;

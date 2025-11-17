@@ -1,0 +1,9 @@
+.Sobre{
+    text-align: center;
+    background-color: #f7e1d7;
+    padding: 80px 20px;
+}
+.Sobre p{
+    margin: 12px;
+    padding-bottom: 1rem;
+}

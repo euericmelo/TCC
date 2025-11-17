@@ -1,0 +1,10 @@
+.local{
+    background-color: aqua;
+}
+.local p{
+    display: flex;
+    text-align: center;
+    margin: 12px;
+    align-items: center;
+    justify-content: center;
+}
