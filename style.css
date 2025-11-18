@@ -11,12 +11,10 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-
-/* STYLE HEADER / NAVBAR */
+/* STYLE HEADER / .NAVBAR */
 
 .container {
-    background-color: #4107c9;
+    background-color: #320697;
     display: flex;
     padding: 12px;
     justify-content: space-around;
