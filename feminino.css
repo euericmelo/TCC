@@ -1,198 +1,136 @@
+/* ============================================
+   ESTILO DA PÁGINA FEMININA
+============================================ */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+.servicos.femininos {
+    padding-bottom: 60px;
 }
 
+/* ============================================
+   HERO / CAPA
+============================================ */
 
-body {
-    background: #ffffff;
-    color: #333;
+.hero {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-/* HEADER  */
-.topo {
-    width: 100%;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.topo h1 {
-    font-size: 26px;
-}
-
-topo span {
-    color: #b62bb6;
-}
-
-.topo ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-/* BANNER */
-.banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px;
-    background: #f7f7f7;
-}
-
-.banner .texto h2 {
-    font-size: 42px;
+.hero h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #d4006f;
     margin-bottom: 10px;
 }
 
-.banner .texto p {
+.hero p {
+    max-width: 750px;
+    margin: 0 auto 25px auto;
     font-size: 18px;
     color: #555;
-    margin-bottom: 20px;
 }
 
-.banner button {
-    background: #c40505;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    transition: .3s;
-}
-
-.banner button:hover {
-    background: #c40505;
-}
-
-.banner img {
-    width: 350px;
-}
-
-/*  DESTAQUES  */
-.destaques {
-    background: #be0c74;
-    padding: 50px 20px;
-    text-align: center;
-    color: white;
-}
-
-.destaques h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.destaques p {
-    margin-bottom: 30px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 30px;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 25px;
-    width: 250px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(4px);
-}
-
-.card h4 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.btn2 {
+.hero img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 14px;
     margin-top: 20px;
-    background: white;
-    color: #7a33d6;
-    padding: 12px 25px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: .3s;
+    box-shadow: 0 4px 20px rgba(212, 0, 111, 0.25);
 }
 
-.btn2:hover {
-    background: #f0f0f0;
-}
+/* ============================================
+   LISTA DE SERVIÇOS
+============================================ */
 
-/* GALERIA  */
-.galeria {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.galeria h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.fotos {
-    display: flex;
-    justify-content: center;
+.lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.fotos img {
-    width: 260px;
-    border-radius: 15px;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* FOOTER */
-footer {
-    background: #630343;
-    color: white;
+.servico {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 15px;
     text-align: center;
-    padding: 30px;
+    transition: .3s ease;
+    border: 1px solid #f8c7dd;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+    border-color: #ff429c;
+    box-shadow: 0 0 20px rgba(255, 66, 156, 0.4);
+}
+
+.servico img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.servico h2 {
+    font-size: 22px;
+    color: #d4006f;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ============================================
+   BOTÃO CTA
+============================================ */
+
+.cta {
+    text-align: center;
     margin-top: 40px;
 }
 
-footer h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-/* STYLE HEADER / NAVBAR */
-
-.container {
-    background-color: #4107c9;
-    display: flex;
-    padding: 12px;
-    justify-content: space-around;
-}
-
-.logo {
-    width: 30px;
-}
-
-.navbar {
-    display: flex;
-    gap: 1rem;
-}
-
-.navbar a {
+.botao {
+    display: inline-block;
+    padding: 14px 35px;
+    font-size: 20px;
+    font-weight: 600;
     text-decoration: none;
-    color: aliceblue;
-    font-size: 1.2rem;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(45deg, #ff007f, #ff4da6, #ff80c1);
+    box-shadow: 0 6px 20px rgba(255, 0, 127, 0.4);
+    transition: .3s ease;
+}
 
+.botao:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.6);
+}
+
+/* ============================================
+   RESPONSIVO
+============================================ */
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .servico h2 {
+        font-size: 20px;
+    }
+
+    .botao {
+        font-size: 18px;
+        padding: 12px 28px;
+    }
 }
