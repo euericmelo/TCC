@@ -5,6 +5,7 @@
 @import url(masculino.css);
 @import url(feminino.css);
 @import url(manicure.css);
+@import url(serviços.css);
 
 /* STYLE RESET BASICOS */
 * {
@@ -20,6 +21,9 @@
     display: flex;
     padding: 12px;
     justify-content: space-around;
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -151,9 +155,7 @@ font-weight:600;
   /*não ter linha na list*/
   .servico ul li:last-child {
     border-bottom: none;
-margin:4px:
-    
-
+margin:4px;
 }
 
 /*NAVBAR DESKTOP*/
@@ -244,3 +246,4 @@ margin:4px:
   outline: none;
   box-shadow: none;
 }
+
