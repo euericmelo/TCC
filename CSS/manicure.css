@@ -112,26 +112,4 @@
     box-shadow: 0 10px 30px rgba(255, 79, 161, 0.6);
 }
 
-/* ============================================
-   RESPONSIVO
-============================================ */
 
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 16px;
-        padding: 0 10px;
-    }
-
-    .servico h2 {
-        font-size: 20px;
-    }
-
-    .botao {
-        font-size: 18px;
-        padding: 12px 28px;
-    }
-}

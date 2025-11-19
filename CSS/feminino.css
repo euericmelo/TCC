@@ -1,15 +1,8 @@
-/* ============================================
-   ESTILO DA PÁGINA FEMININA
-============================================ */
-
+/* SERVIÇOS FEMININO */
 
 .servicos.femininos {
     padding-bottom: 60px;
 }
-
-/* ============================================
-   HERO / CAPA
-============================================ */
 
 .hero {
     text-align: center;
@@ -38,9 +31,7 @@
     box-shadow: 0 4px 20px rgba(212, 0, 111, 0.25);
 }
 
-/* ============================================
-   LISTA DE SERVIÇOS
-============================================ */
+/*LISTA DE SERVIÇOS */
 
 .lista-servicos {
     display: grid;
@@ -84,9 +75,7 @@
     line-height: 1.5;
 }
 
-/* ============================================
-   BOTÃO CTA
-============================================ */
+/*BOTÃO CONTATO*/
 
 .cta {
     text-align: center;
@@ -109,28 +98,4 @@
 .botao:hover {
     transform: scale(1.07);
     box-shadow: 0 10px 30px rgba(255, 0, 127, 0.6);
-}
-
-/* ============================================
-   RESPONSIVO
-============================================ */
-
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 16px;
-        padding: 0 10px;
-    }
-
-    .servico h2 {
-        font-size: 20px;
-    }
-
-    .botao {
-        font-size: 18px;
-        padding: 12px 28px;
-    }
 }

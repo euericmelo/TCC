@@ -1,14 +1,7 @@
-
-    :root{
-      --bg: #fff7f7;
-      --accent: #d51f66; /* cor de destaque */
-      --muted: #b8b8b8;
-      --card-bg: #fff;
-      --text: #333;
-    }
+/* STYLE DEPOIMENOS */
   
     .depoimentos{
-      background: var(--bg);
+      background: #fff7f7;
       padding: 60px 20px;
       text-align: center;
     }
@@ -18,7 +11,7 @@
     }
     .depoimentos h2{
       font-size: 2.4rem;
-      color: var(--accent);
+      color:#d51f66;
       margin-bottom: 8px;
     }
     .depoimentos .lead{
@@ -38,7 +31,7 @@
       }
     
       .card{
-        background: var(--card-bg);
+        background: #fff;
         border-radius: 6px;
         box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         overflow: hidden;
@@ -46,10 +39,10 @@
         flex-direction: column;
       }
       .card-media img{
-        width: 100%;
+        width: 80%;
         height: 180px;
-        object-fit: cover;
-        display: block;
+        border-radius: 50%;
+        padding: 5px;
       }
       .card-body{
         padding: 18px;
@@ -59,15 +52,15 @@
         flex-direction: column;
       }
       .rating{
-        color: var(--accent);
+        color: #d51f66;
         font-size: 1.1rem;
         margin-bottom: 10px;
       }
       .rating .muted{
-        color: var(--muted);
+        color:  #b8b8b8;
       }
       .quote{
-        color: var(--text);
+        color: #333;
         flex: 1;
         margin-bottom: 12px;
       }

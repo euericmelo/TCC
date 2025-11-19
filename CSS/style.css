@@ -71,11 +71,16 @@ video::-webkit-media-controls {
 }
 
 .conteudo-inicio {
+  height: 100%;
   position: relative;
   z-index: 10;
   text-align: center;
   color: white;
-  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 /* STYLE SERVICOS */
@@ -151,13 +156,13 @@ margin:4px:
 
 }
 
-/* ====================== NAVBAR DESKTOP ====================== */
+/*NAVBAR DESKTOP*/
 .navbar {
   display: flex;
   gap: 25px;
 }
 
-/* ====================== BOTÃO MENU HAMBURGUER ====================== */
+/*BOTÃO MENU HAMBURGUER*/
 .menu-btn {
   display: none;
   width: 32px;
@@ -196,71 +201,7 @@ margin:4px:
   top: 10px;
 }
 
-/* ====================== MOBILE MENU ====================== */
-@media (max-width: 600px) {
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    right: -280px; /* escondido */
-    width: 280px;
-    height: 100vh;
-    background: linear-gradient(180deg, #ffb6d5, #ffcde6); /* rosa suave */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 30px;
-    gap: 25px;
-    transition: 0.35s ease-in-out;
-    z-index: 1100;
-    border-left: 5px solid #e64b89; /* detalhe premium */
-  }
-
-  .navbar a {
-    color: #a2004e; /* rosa escuro */
-    font-size: 22px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 12px 18px;
-    background: #ffffff99;
-    border-radius: 12px;
-    backdrop-filter: blur(8px);
-    transition: 0.25s;
-  }
-
-  .navbar a:hover {
-    background: #ffffffcc;
-    transform: translateX(5px);
-  }
-
-  /* menu aparece */
-  .navbar.active {
-    right: 0;
-  }
-
-  /* Botão menu aparece no mobile */
-  .menu-btn {
-    display: block;
-  }
-
-  /* Overlay */
-  .overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.35);
-    z-index: 1000;
-  }
-
-  .overlay.active {
-    display: block;
-  }
- .btn-inicio {
-    font-size: 16px;
-    padding: 12px 28px;
-  }
-}
-/* ===== BOTÃO RGB NEON CHAMATIVO ===== */
+/* BOTÃO RGB NEON CHAMATIVO*/
 .btn-inicio {
   display: inline-block;
   padding: 15px 40px;
@@ -286,14 +227,14 @@ margin:4px:
   letter-spacing: 1px;
 }
 
-/* Animação RGB */
+/* ANIMAÇAO RGB */
 @keyframes rgbMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Hover explosivo */
+/* HOVER */
 .btn-inicio:hover {
   transform: scale(1.12);
   box-shadow: 0 0 25px rgba(255, 0, 80, 0.9), 0 0 40px rgba(255, 30, 120, 0.7);
@@ -302,12 +243,4 @@ margin:4px:
 .btn-inicio:active {
   outline: none;
   box-shadow: none;
-}
-
-/* Mobile ajuste */
-@media (max-width: 600px) {
-  .btn-inicio {
-    padding: 13px 32px;
-    font-size: 17px;
-  }
 }
