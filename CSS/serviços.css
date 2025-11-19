@@ -86,17 +86,46 @@
     margin-top: 60px;
     font-size: 0.9em;
   }
-  .btn-inicio {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: brown;
-    padding: 12px;
-    border-radius: 1rem;
-    margin: 1rem;
-    text-decoration: none;
-    color: rgb(245, 242, 242);
-    font-weight: bolder;
-    
+  /* BOTÃO RGB NEON CHAMATIVO*/
+.btn-inicio {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  -webkit-tap-highlight-color: transparent; /* Remove o highlight azul no mobile */
+  outline: none; /* Remove a borda azul */
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff3b3b,
+    #ff008c,
+    #ff3b3b,
+    #ff0000
+  );
+  background-size: 300% 300%;
+  animation: rgbMove 4s ease infinite;
+  box-shadow: 0 0 18px rgba(255, 0, 68, 0.7);
+  transition: 0.25s ease;
+  letter-spacing: 1px;
+}
 
+/* ANIMAÇAO RGB */
+@keyframes rgbMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* HOVER */
+.btn-inicio:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 25px rgba(255, 0, 80, 0.9), 0 0 40px rgba(255, 30, 120, 0.7);
+}
+.btn-inicio:focus,
+.btn-inicio:active {
+  outline: none;
+  box-shadow: none;
 }

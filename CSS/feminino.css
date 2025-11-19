@@ -1,15 +1,50 @@
+<<<<<<< HEAD
 
 /* ==========================
    ESTILO GERAL DA PÁGINA
 ========================== */
+=======
+/* SERVIÇOS FEMININO */
+>>>>>>> 5b40cfb0e8d48c5a84a61b55fb6b619a4c698baf
 
 .servicos.masculinos {
     padding-bottom: 60px;
 }
 
+<<<<<<< HEAD
 /* ==========================
    LISTA DE SERVIÇOS
 ========================== */
+=======
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #d4006f;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 0 auto 25px auto;
+    font-size: 18px;
+    color: #555;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 14px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(212, 0, 111, 0.25);
+}
+
+/*LISTA DE SERVIÇOS */
+>>>>>>> 5b40cfb0e8d48c5a84a61b55fb6b619a4c698baf
 
 .lista-servicos {
     display: grid;
@@ -52,9 +87,13 @@
     line-height: 1.5;
 }
 
+<<<<<<< HEAD
 /* ==========================
    BOTÃO CTA
 ========================== */
+=======
+/*BOTÃO CONTATO*/
+>>>>>>> 5b40cfb0e8d48c5a84a61b55fb6b619a4c698baf
 
 .cta {
     text-align: center;
@@ -78,6 +117,7 @@
     transform: scale(1.06);
     box-shadow: 0 8px 24px rgba(255, 0, 0, 0.6);
 }
+<<<<<<< HEAD
 
 /* ==========================
    RESPONSIVO
@@ -102,3 +142,5 @@
         padding: 12px 28px;
     }
 }
+=======
+>>>>>>> 5b40cfb0e8d48c5a84a61b55fb6b619a4c698baf
