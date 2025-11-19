@@ -1,46 +1,15 @@
-/* ============================================
-   ESTILO DA PÁGINA FEMININA
-============================================ */
 
+/* ==========================
+   ESTILO GERAL DA PÁGINA
+========================== */
 
-.servicos.femininos {
+.servicos.masculinos {
     padding-bottom: 60px;
 }
 
-/* ============================================
-   HERO / CAPA
-============================================ */
-
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.hero h1 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #d4006f;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    max-width: 750px;
-    margin: 0 auto 25px auto;
-    font-size: 18px;
-    color: #555;
-}
-
-.hero img {
-    width: 100%;
-    max-width: 750px;
-    border-radius: 14px;
-    margin-top: 20px;
-    box-shadow: 0 4px 20px rgba(212, 0, 111, 0.25);
-}
-
-/* ============================================
+/* ==========================
    LISTA DE SERVIÇOS
-============================================ */
+========================== */
 
 .lista-servicos {
     display: grid;
@@ -51,42 +20,41 @@
     margin: auto;
 }
 
-.servico {
-    background: #ffffff;
+.servico-m {
+    background: #1a1a1a;
     border-radius: 14px;
     padding: 15px;
     text-align: center;
     transition: .3s ease;
-    border: 1px solid #f8c7dd;
+    border: 1px solid #222;
 }
 
-.servico:hover {
+.servico-m:hover {
     transform: translateY(-5px);
-    border-color: #ff429c;
-    box-shadow: 0 0 20px rgba(255, 66, 156, 0.4);
+    border-color: #ff3b3b;
+    box-shadow: 0 0 18px rgba(255, 60, 60, 0.4);
 }
 
-.servico img {
+.servico-m img {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 15px;
 }
 
-.servico h2 {
+.servico-m  h2 {
     font-size: 22px;
-    color: #d4006f;
     margin-bottom: 10px;
 }
 
-.servico p {
+.servico-m p {
     font-size: 15px;
-    color: #666;
+    color: #ccc;
     line-height: 1.5;
 }
 
-/* ============================================
+/* ==========================
    BOTÃO CTA
-============================================ */
+========================== */
 
 .cta {
     text-align: center;
@@ -95,25 +63,25 @@
 
 .botao {
     display: inline-block;
-    padding: 14px 35px;
+    padding: 14px 32px;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     border-radius: 50px;
     color: white;
-    background: linear-gradient(45deg, #ff007f, #ff4da6, #ff80c1);
-    box-shadow: 0 6px 20px rgba(255, 0, 127, 0.4);
+    background: linear-gradient(45deg, #ff0000, #ff4747, #ff7b7b);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
     transition: .3s ease;
 }
 
 .botao:hover {
-    transform: scale(1.07);
-    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.6);
+    transform: scale(1.06);
+    box-shadow: 0 8px 24px rgba(255, 0, 0, 0.6);
 }
 
-/* ============================================
+/* ==========================
    RESPONSIVO
-============================================ */
+========================== */
 
 @media (max-width: 600px) {
     .hero h1 {
@@ -125,7 +93,7 @@
         padding: 0 10px;
     }
 
-    .servico h2 {
+    .servico-m h2 {
         font-size: 20px;
     }
 
