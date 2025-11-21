@@ -93,7 +93,6 @@ video::-webkit-media-controls {
   /*espaço da img com text*/
   .servicos {
     padding: 60px 20px;
-    display: flex;
   }
   .servico h3{
     text-align: center;
@@ -248,4 +247,29 @@ margin:4px;
   outline: none;
   box-shadow: none;
 }
+/* STYLE GALERIA*/
 
+
+.sessao-galeria {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sessao-galeria h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}

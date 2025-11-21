@@ -4,7 +4,11 @@
       background: #fff7f7;
       padding: 60px 20px;
       text-align: center;
+       display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     }
+
     .depoimentos .containe{
       max-width: 1100px;
       margin: 0 auto;
@@ -23,13 +27,6 @@
     .depoimentos-wrapper{
         position: relative;
       }
-      .depoimentos-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 28px;
-        align-items: stretch;
-      }
-    
       .card{
         background: #fff;
         border-radius: 6px;
@@ -42,7 +39,7 @@
         width: 80%;
         height: 180px;
         border-radius: 50%;
-        padding: 5px;
+        padding: 10px;
       }
       .card-body{
         padding: 18px;

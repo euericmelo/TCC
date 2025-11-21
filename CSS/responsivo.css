@@ -96,11 +96,24 @@
   }
   .depoimentos{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   .galeria{
     display: grid;
     grid-template-columns: repeat(8,1fr);
 
   }
+     .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .sessao-galeria {
+        padding: 20px 10px;
+    }
+
+    .sessao-galeria h2 {
+        font-size: 1.4rem;
+    }
 }
