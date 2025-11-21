@@ -90,10 +90,6 @@
   .servico-m h2 {
     font-size: 20px;
   }
-  .servicos{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-  }
   .depoimentos{
     display: grid;
     grid-template-columns: 1fr;
@@ -115,5 +111,10 @@
 
     .sessao-galeria h2 {
         font-size: 1.4rem;
+    }
+    .container-servicos{
+      display: grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:20px;
     }
 }

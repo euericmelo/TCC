@@ -11,12 +11,14 @@
 
     .depoimentos .containe{
       max-width: 1100px;
-      margin: 0 auto;
+      gap:12px;
     }
     .depoimentos h2{
+      text-align: center;
       font-size: 2.4rem;
       color:#d51f66;
       margin-bottom: 8px;
+      text-align: center;
     }
     .depoimentos .lead{
       color: #666;
@@ -69,11 +71,7 @@
         color: #888;
         font-weight: 400;
       }
-    
-      .cta{
-        margin-top: 30px;
-        text-align: left;
-      }
+  /*
       .btn-reserva{
         display: inline-block;
         background: #9b2f2f;
@@ -85,7 +83,7 @@
         box-shadow: 0 6px 12px rgba(155,47,47,0.2);
       }
     
-      /* nav buttons (aparecem apenas em mobile) */
+       nav buttons (aparecem apenas em mobile)
       .nav{
         display: none;
         position: absolute;
@@ -110,9 +108,7 @@
         border-radius: 1rem;
         margin: 1rem;
         text-decoration: none;
-        color: rgb(245, 242, 242);
-        font-weight: bolder;
-        
-    
+        color: rgb(245, 242, 242
     }
+        */
     
