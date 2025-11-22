@@ -1,0 +1,67 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+    // ===============================
+    // MENU HAMBÚRGUER + OVERLAY
+    // ===============================
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navbar = document.getElementById("navbar");
+    const overlay = document.getElementById("overlay");
+
+    if (menuBtn && navbar && overlay) {
+
+        // Função abrir menu
+        function abrirMenu() {
+            menuBtn.classList.add("active");
+            navbar.classList.add("mobile-show");
+            navbar.classList.remove("mobile-hidden");
+            overlay.classList.add("show");
+        }
+
+        // Função fechar menu
+        function fecharMenu() {
+            menuBtn.classList.remove("active");
+            navbar.classList.remove("mobile-show");
+            navbar.classList.add("mobile-hidden");
+            overlay.classList.remove("show");
+        }
+
+        // Toggle do botão
+        menuBtn.addEventListener("click", () => {
+            if (navbar.classList.contains("mobile-show")) {
+                fecharMenu();
+            } else {
+                abrirMenu();
+            }
+        });
+
+        // Fechar menu ao clicar no overlay
+        overlay.addEventListener("click", () => {
+            fecharMenu();
+        });
+    }
+
+
+    // ===============================
+    // BOTÕES WHATSAPP POR ID
+    // ===============================
+
+    const numeroWhatsApp = "5511972776263";
+
+    const mensagem = "Olá! Gostaria de agendar um horário no Studio Victor e Bia.";
+    
+    const linkWhats = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+    const botoesIds = ["btn-reserva", "btn-reserva-2", "btn-reserva-3"];
+    botoesIds.forEach(id => {
+        const botao = document.getElementById(id);
+        if (botao) {
+            botao.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.open(linkWhats, "_blank");
+            });
+        }
+    });
+
+
+});

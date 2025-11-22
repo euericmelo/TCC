@@ -1,13 +1,7 @@
 
-
-.servicos.masculinos {
-    padding-bottom: 60px;
+.manicure{
+padding:1.5rem;
 }
-
-/* ==========================
-   LISTA DE SERVIÇOS
-========================== */
-
 .lista-servicos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -17,7 +11,7 @@
     margin: auto;
 }
 
-.servico-m {
+.servico3{
     background: #1a1a1a;
     border-radius: 14px;
     padding: 15px;
@@ -26,48 +20,26 @@
     border: 1px solid #222;
 }
 
-.servico-m:hover {
+.servico3:hover {
     transform: translateY(-5px);
     border-color: #ff3b3b;
     box-shadow: 0 0 18px rgba(255, 60, 60, 0.4);
 }
 
-.servico-m img {
+.servico3 img {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 15px;
 }
 
-.servico-m  h2 {
+.servico3 h2 {
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.servico-m p {
+.servico3 p {
     font-size: 15px;
     color: #ccc;
     line-height: 1.5;
 }
 
-.cta {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.botao {
-    display: inline-block;
-    padding: 14px 32px;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 50px;
-    color: white;
-    background: linear-gradient(45deg, #ff0000, #ff4747, #ff7b7b);
-    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
-    transition: .3s ease;
-}
-
-.botao:hover {
-    transform: scale(1.06);
-    box-shadow: 0 8px 24px rgba(255, 0, 0, 0.6);
-}

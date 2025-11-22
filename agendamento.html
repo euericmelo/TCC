@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agendamento | Studio Victor e Bia</title>
+  <link rel="stylesheet" href="./CSS/agendamento.css">
+</head>
+<body>
+  
+
+  <main class="container-a">
+    <h1>Agende seu horário</h1>
+
+    <form id="form-agenda" autocomplete="off">
+
+      <div class="campo">
+        <label for="nome">Nome completo</label>
+        <input id="nome" type="text" required />
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone (WhatsApp)</label>
+        <input id="telefone" type="tel" placeholder="Ex: 11999998888" required />
+      </div>
+
+      <div class="campo">
+        <label for="servico">Serviço</label>
+        <select id="servico" required>
+          <option value="">Selecione</option>
+          <option value="Corte Masculino">Masculino — Corte</option>
+          <option value="Corte Feminino">Feminino — Corte</option>
+          <option value="Coloração Feminino">Feminino — Coloração</option>
+          <option value="Manicure">Manicure</option>
+          <option value="Pedicure">Pedicure</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="data">Data (Terça a Sábado)</label>
+        <input id="data" type="date" required />
+      </div>
+
+      <div class="horarios">
+        <h3>Horários disponíveis</h3>
+        <div id="lista-horarios" aria-live="polite"></div>
+      </div>
+
+      <button type="submit" class="btn-agendar">Finalizar Agendamento</button>
+
+    </form>
+  </main>
+
+  <script src="./JS/agendamento.js" defer></script>
+</body>
+</html>

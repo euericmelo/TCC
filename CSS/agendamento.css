@@ -1,0 +1,124 @@
+@import url("style.css");
+
+* { box-sizing: border-box; margin:0; padding:0; font-family: "Poppins", sans-serif; }
+
+body {
+  background: #f3f4f6;
+  padding: 20px;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container-a{
+  max-width: 680px;
+  margin: 18px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.06);
+}
+
+h1 {
+  color: #b32169;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.horarios {
+  margin-top: 12px;
+}
+
+.horarios h3 {
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 1rem;
+}
+
+#lista-horarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  gap: 10px;
+}
+
+.horario {
+  padding: 10px 8px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  color: #111827;
+  transition: transform .12s ease, background .12s ease, color .12s ease;
+  user-select: none;
+}
+
+.horario:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg,#ff8aa2,#b32169);
+  color: white;
+}
+
+.horario.ocupado {
+  background: #9ca3af;
+  color: #ffffff;
+  cursor: not-allowed;
+  opacity: .95;
+  transform: none;
+}
+
+.horario.selecionado {
+  background: #b32169;
+  color: white;
+  box-shadow: 0 8px 20px rgba(179,33,105,0.18);
+}
+
+/* botão finalizar */
+.btn-agendar {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.02rem;
+  background: linear-gradient(90deg,#ff0048,#ff00c8,#6a00ff);
+  background-size: 300% 300%;
+  animation: rgbMove 5s ease infinite;
+  cursor: pointer;
+}
+
+@keyframes rgbMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* responsividade */
+@media (max-width:480px) {
+  .container { padding: 18px; }
+  #lista-horarios { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+}

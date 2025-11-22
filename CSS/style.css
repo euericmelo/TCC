@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url(sobre.css);
-@import url(endereço.css);
-@import url(depoimentos.css);
 @import url(masculino.css);
 @import url(feminino.css);
 @import url(manicure.css);
-@import url(serviços.css);
-@import url(responsivo.css);
 
 /* STYLE RESET BASICOS */
 * {
@@ -15,8 +10,8 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-/* STYLE HEADER / NAVBAR */
 
+/* STYLE HEADER / NAVBAR */
 .container {
     background-color: #320697;
     display: flex;
@@ -40,16 +35,12 @@
     text-decoration: none;
     color: aliceblue;
     font-size: 1.2rem;
-
-}
-/* Botão menu inicialmente escondido */
-.menu-btn {
-  display: none;
-  font-size: 32px;
-  cursor: pointer;
 }
 
-
+.navbar {
+  display: flex;
+  gap: 25px;
+}
 
 /* STYLE MAIN */
 #Inicio {
@@ -69,8 +60,9 @@
   transform: translate(-50%, -50%);
   z-index: -1;
   filter: brightness(65%);
-pointer-events: none;
+  pointer-events: none;
 }
+
 video::-webkit-media-controls {
   display: none !important;
 }
@@ -85,177 +77,73 @@ video::-webkit-media-controls {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
 }
 
 /* STYLE SERVICOS */
-
-  /*espaço da img com text*/
-  .servicos {
-    padding: 60px 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-  }
-  .servico h3{
-    text-align: center;
-  }
-  /*testo "nossos serviços"*/
-   h2 {
-    font-size: 1.5rem;/*tamanho da fonte*/
+.sevicos{
+width:100%;
+}
+ 
+h2 {
+    font-size: 1.5rem;
     color: #d63384;
     margin-bottom: 10px;
     text-align: center;
-font-weight:600;
-  }
+    font-weight:600;
+}
   
-  .descricao {
+.descricao {
     font-size: 1em;
     color: #555;
-    max-width: 600px;
     margin: 0 auto 50px;
-  }
-  
-/*caixa que mostra nosso serviços*/
-  .container-servicos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));/* Cria colunas que se ajustam automaticamente */
+}
+
+.container-servicos {
+    display: flex;
     gap: 35px;
-    max-width: 1200px;
-    margin: auto;
-  }
+    width:100%;
+}
   
-/*corpo geral*/
-  .servico {
+.servico {
     background: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0,   0, 0, 0.1);
     transition: all 0.3s ease;
-    overflow: hidden; /* para cortar e esconder qualquer conteúdo que ultrapasse os limites de um elemento*/
-  }
-  /*animação*/
-  .servico:hover {
+    overflow: hidden; 
+}
+ 
+.servico:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  }
-  /*imagem do site*/
-  .servico img {
+}
+
+.servico img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-  }
-  /*texto do que nos faz*/
-  .servico h3 {
+}
+
+.servico h3 {
     font-size: 1.2rem;
     margin: 15px 0;
     color: #b32169;
-font-weight:600;
-  }
-  /*list que de nossos serviços*/
-  .servico ul {
+    font-weight:600;
+    text-align:center;
+}
+
+.servico ul {
     padding: 0 25px 25px;
-  }
-  
+}
 
-  /*não ter linha na list*/
-  .servico ul li:last-child {
+.servico ul li:last-child {
     border-bottom: none;
-margin:4px;
+    margin:4px;
 }
 
-/*NAVBAR DESKTOP*/
-.navbar {
-  display: flex;
-  gap: 25px;
-}
-
-/*BOTÃO MENU HAMBURGUER*/
-.menu-btn {
-  display: none;
-  width: 32px;
-  height: 25px;
-  cursor: pointer;
-  position: relative;
-  z-index: 1200;
-}
-
-.menu-btn span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #e64b89; /* rosa forte */
-  border-radius: 4px;
-  position: absolute;
-  transition: 0.3s ease;
-}
-
-.menu-btn span:nth-child(1) { top: 0; }
-.menu-btn span:nth-child(2) { top: 10px; }
-.menu-btn span:nth-child(3) { top: 20px; }
-
-/* Animação para virar X */
-.menu-btn.active span:nth-child(1) {
-  transform: rotate(45deg);
-  top: 10px;
-}
-
-.menu-btn.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-btn.active span:nth-child(3) {
-  transform: rotate(-45deg);
-  top: 10px;
-}
-
-/* BOTÃO RGB NEON CHAMATIVO*/
-.btn-inicio {
-  display: inline-block;
-  padding: 15px 40px;
-  font-size: 19px;
-  font-weight: 700;
-  text-decoration: none;
-  color: white;
-  border-radius: 50px;
-  -webkit-tap-highlight-color: transparent; /* Remove o highlight azul no mobile */
-  outline: none; /* Remove a borda azul */
-  background: linear-gradient(
-    90deg,
-    #ff0000,
-    #ff3b3b,
-    #ff008c,
-    #ff3b3b,
-    #ff0000
-  );
-  background-size: 300% 300%;
-  animation: rgbMove 4s ease infinite;
-  box-shadow: 0 0 18px rgba(255, 0, 68, 0.7);
-  transition: 0.25s ease;
-  letter-spacing: 1px;
-}
-
-/* ANIMAÇAO RGB */
-@keyframes rgbMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* HOVER */
-.btn-inicio:hover {
-  transform: scale(1.12);
-  box-shadow: 0 0 25px rgba(255, 0, 80, 0.9), 0 0 40px rgba(255, 30, 120, 0.7);
-}
-.btn-inicio:focus,
-.btn-inicio:active {
-  outline: none;
-  box-shadow: none;
-}
-/* STYLE GALERIA*/
-
-
+/* STYLE GALERIA */
 .sessao-galeria {
     padding: 40px 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .sessao-galeria h2 {
@@ -264,14 +152,390 @@ margin:4px;
 }
 
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 15px;
 }
 
 .galeria img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
+    width:100%;
     object-fit: cover;
 }
+
+/* STYLE DEPOIMENOS */
+.depoimentos{
+    background: #fff7f7;
+    padding: 60px 20px;
+    text-align: center;
+    gap: 25px;
+}
+
+.depoimento{
+    display: flex;
+    gap: 35px;
+}
+
+.depoimento h2{
+    text-align: center;
+    font-size: 2.4rem;
+    color:#d51f66;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.card{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-media img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    padding:10px;
+    display:block;
+    margin:0 auto;
+}
+
+.card-body{
+    padding: 18px;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating{
+    color: #d51f66;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.rating .muted{
+    color:  #b8b8b8;
+}
+
+.quote{
+    color: #333;
+    flex: 1;
+    margin-bottom: 12px;
+}
+
+.author{
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.author .role{
+    color: #888;
+    font-weight: 400;
+}
+/* STYLE SOBRE */
+.Sobre {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #333;
+    text-align: left;
+}
+
+.Sobre h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #d63384;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.Sobre p {
+    margin-bottom: 18px;
+}
+
+
+/* STYLE ENDEREÇO */
+.Endereço {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Caixa do texto */
+.local {
+    background-color: rgb(25, 0, 255);
+    padding: 18px;
+    border-radius: 12px;
+    color: white;
+    width: 50%;
+    height: auto;
+}
+
+/* Mapa */
+.mapa {
+    width: 50%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ====================
+
+/* STYLE SOBRE */
+.Sobre{
+    text-align:center;
+    margin: 0 auto;
+    padding:20px;
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+/* --------------------------------------- */
+/* RESPONSIVIDADE MOBILE (NOVO + CORRIGIDO) */
+/* --------------------------------------- */
+@media (max-width:600px){
+
+  .container-servicos{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:20px;
+      padding:10px;
+  }
+
+  .galeria {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+  }
+
+  .galeria img {
+      width:100%;
+      height:auto;
+  }
+
+  .depoimento {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+  }
+
+  .card-media img {
+      width: 140px;
+      height: 140px;
+  }
+
+  .btn-rgb {
+      width: 90%;
+      text-align: center;
+      margin: 20px auto;
+      font-size: 1.15rem;
+      padding: 14px 20px;
+  }
+    .Sobre {
+        padding: 15px;
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .Sobre h2 {
+        font-size: 1.7rem;
+    }
+     .Endereço {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .local {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .mapa {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .mapa iframe {
+        height: 320px !important;
+    }
+   .footer {
+        font-size: 0.9rem;
+    }
+
+    .footer .dev {
+        font-size: 0.8rem;
+    }
+
+/* ============================= */
+/*    MENU HAMBÚRGUER MOBILE     */
+/* ============================= */
+
+/* Botão hambúrguer */
+.menu-btn {
+    width: 35px;
+    height: 28px;
+    display: none; /* só mostra no mobile */
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.menu-btn span {
+    display: block;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+/* Efeito X ao abrir */
+.menu-btn.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-btn.active span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+/* ------------------------------ */
+/* NAVBAR NO MOBILE               */
+/* ------------------------------ */
+
+.navbar {
+    transition: top .4s ease;
+}
+
+/* Estado fechado (escondido acima da tela) */
+.navbar.mobile-hidden {
+    top: -300px;
+}
+
+/* Estado aberto — desce suavemente */
+.navbar.mobile-show {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(50, 6, 151, 0.92); /* mesma cor do navbar + transparente */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 25px 0;
+    animation: slideDown .3s ease forwards;
+    z-index: 1500;
+}
+
+@keyframes slideDown {
+    from { top: -200px; }
+    to { top: 60px; }
+}
+
+/* ------------------------------ */
+/* LINKS DO MENU NO MOBILE        */
+/* ------------------------------ */
+
+.navbar.mobile-show a {
+    font-size: 1.4rem;
+    padding: 8px 0;
+}
+
+/* =============== */
+/*  RESPONSIVO     */
+/* =============== */
+
+@media (max-width: 600px) {
+
+    /* Esconde navbar padrão */
+    .navbar {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Exibe o hambúrguer */
+    .menu-btn {
+        display: flex;
+    }
+
+    /* Ajusta container */
+    .container {
+        justify-content: space-between;
+        padding: 12px 20px;
+    }
+}
+
+/* STYLE FOOTER */
+
+.footer {
+    width: 100%;
+    background-color: #320697; /* mesma cor do navbar */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.footer .dev {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.footer .dev strong {
+    color: #d63384; /* tom rosa que você usa nos títulos */
+}
+
+/* STYLE BOTAO CTT INDEX */
+.btn-inicio:visited {
+ color: white; /* cor fixa */
+}
+
+.btn-inicio {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(45deg, #ff0000, #ff4747, #ff7b7b);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+    transition: .3s ease;
+}
+
+.botao:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 24px rgba(255, 0, 0, 0.6);
+}
+
